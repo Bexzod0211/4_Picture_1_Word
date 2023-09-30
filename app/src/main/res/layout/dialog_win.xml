@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#DA10192D"
+    >
+
+    <TextView
+        android:id="@+id/txt_comment"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="Very Good"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#A8E202"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="true"
+        android:layout_marginTop="?android:actionBarSize"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/coin_bg"
+        android:gravity="center"
+        android:paddingHorizontal="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/img_coin"
+            android:layout_marginStart="3dp"
+            />
+
+        <TextView
+            android:id="@+id/txtCountCoinDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:textSize="20sp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            />
+    </LinearLayout>
+
+    <!--<TextView
+        android:id="@+id/img_icons_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        android:text="+15"
+        android:textSize="40sp"
+        android:textColor="#FAC900"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:drawablePadding="10dp"
+        app:drawableEndCompat="@drawable/coin_img" />-->
+
+    <ImageView
+        android:id="@+id/img_icons_add"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:src="@drawable/add_4_coins_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        />
+
+    <LinearLayout
+        android:id="@+id/dialog_answers_line"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_icons_add"
+        app:layout_constraintBottom_toTopOf="@id/btn_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.68"
+        >
+        <TextView
+            tools:text="A"
+            style="@style/style_correct_answer_buttons" />
+
+        <TextView
+            tools:text="A"
+            style="@style/style_correct_answer_buttons" />
+
+        <TextView
+            tools:text="A"
+            style="@style/style_correct_answer_buttons" />
+
+        <TextView
+            tools:text="A"
+            style="@style/style_correct_answer_buttons" />
+
+        <TextView
+            tools:text="A"
+            style="@style/style_correct_answer_buttons" />
+
+        <TextView
+            tools:text="A"
+            style="@style/style_correct_answer_buttons" />
+
+        <TextView
+            tools:text="A"
+            style="@style/style_correct_answer_buttons" />
+        <TextView
+            tools:text="A"
+            style="@style/style_correct_answer_buttons" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:background="@drawable/play_bg_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="?android:actionBarSize"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
